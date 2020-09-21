@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+}
+
+.mode-lr {
+  flex-direction: row;
+}
+
+.mode-rl {
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 70vh;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: 2px dashed mediumvioletred;
+  transition: 0.5s;
+}
+
+.flex-item {
+  flex: 1 0 150px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  transition-property: flex;
+  transition-duration: 0.5s;
+}
+
+.flex-item:hover {
+  flex: 6 0 150px;
+}
+
+.flex-item:nth-child(1) {
+  background-color: steelblue;
+}
+
+.flex-item:nth-child(2) {
+  background-color: thistle;
+}
+
+.flex-item:nth-child(3) {
+  background-color: lightseagreen;
+}
+
+.flex-item:nth-child(4) {
+  background-color: wheat;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.button {
+  flex: 0 0 20%;
+  display: block;
+  padding: 0.5em;
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: gold;
+  border: 2px solid black;
+  transition-duration: 0.2s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: lightsteelblue;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: gold;
+  transform: none;
+}
