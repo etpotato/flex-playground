@@ -10,11 +10,11 @@ body {
   text-transform: uppercase;
 }
 
-.mode-lr {
+.mode-row {
   flex-direction: row;
 }
 
-.mode-rl {
+.mode-column {
   flex-direction: column;
 }
 
